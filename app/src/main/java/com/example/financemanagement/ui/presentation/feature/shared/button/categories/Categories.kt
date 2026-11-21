@@ -1,4 +1,4 @@
-package com.example.financemanagement.ui.presentation.feature.shared.icon
+package com.example.financemanagement.ui.presentation.feature.shared.button.categories
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -22,12 +22,12 @@ import com.example.financemanagement.ui.theme.FinanceManagementTheme
 
 @Preview
 @Composable
-private fun PrevIconItem() {
+private fun PrevCategoriesItem() {
     FinanceManagementTheme() {
         Box(
             modifier = Modifier.fillMaxSize()
         ) {
-            IconItem(
+            CategoriesItem(
                 icon = R.drawable.ic_food,
                 tint = Color.Black,
                 backColor = colorScheme.primary,
@@ -46,7 +46,7 @@ private fun PrevIconItem() {
 
 
 @Composable
-private fun IconItem(
+fun CategoriesItem(
     icon: Int,
     tint: Color,
     backColor: Color,

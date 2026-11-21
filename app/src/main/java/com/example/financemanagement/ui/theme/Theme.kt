@@ -14,68 +14,40 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-val backLightMode = Color(0xFFF1FFF3)
-val lightGreen = Color(0xFFDFF7E2)
-val mainGreen = Color(0xFF00D09E)
-val greenBar = Color(0xFF0E3E3E)
-val lettersAndIcons = Color(0xFF093030)
-val backDarkMode = Color(0xFF052224)
-val secondaryDarkMode = Color(0xFF031314)
-val lightBlueBtn = Color(0xFF6DB6FE)
-val blueBtn = Color(0xFF3299FF)
-val oceanBlueBtn = Color(0xFF0068FF)
+object FinanceTheme {
+    val backLightMode = Color(0xFFF1FFF3)
+    val lightGreen = Color(0xFFDFF7E2)
+    val mainGreen = Color(0xFF00D09E)
+    val greenBar = Color(0xFF0E3E3E)
+    val lettersAndIcons = Color(0xFF093030)
+    val backDarkMode = Color(0xFF052224)
+    val secondaryDarkMode = Color(0xFF031314)
+    val lightBlueBtn = Color(0xFF6DB6FE)
+    val blueBtn = Color(0xFF3299FF)
+    val oceanBlueBtn = Color(0xFF0068FF)
+}
 private val LightColorScheme = lightColorScheme(
-    primary = mainGreen,
-    onPrimary = Color.White,
-    primaryContainer = lightGreen,
-    onPrimaryContainer = lettersAndIcons,
-
-    secondary = blueBtn,
-    onSecondary = Color.White,
-    secondaryContainer = lightBlueBtn,
-    onSecondaryContainer = Color.Black,
-
-    tertiary = oceanBlueBtn,
-    onTertiary = Color.White,
-
-    background = backLightMode,
-    onBackground = lettersAndIcons,
-
-    surface = Color.White,
-    onSurface = lettersAndIcons,
-
-    surfaceVariant = lightGreen,
-    onSurfaceVariant = greenBar,
-
-    outline = greenBar,
-    outlineVariant = lightGreen
+    primary = FinanceTheme.mainGreen,
+    onPrimary = FinanceTheme.backDarkMode,
+    primaryContainer = FinanceTheme.lightGreen,
+    onPrimaryContainer = FinanceTheme.lettersAndIcons,
+    background = Color.White,
+    tertiary = FinanceTheme.greenBar,
+    onTertiary = Color(0xFF363130),
+    surface = FinanceTheme.oceanBlueBtn,
 )
 
 private val DarkColorScheme = darkColorScheme(
-    primary = mainGreen,
-    onPrimary = backDarkMode,
-    primaryContainer = greenBar,
-    onPrimaryContainer = lightGreen,
+    primary = FinanceTheme.mainGreen,
+    onPrimary = FinanceTheme.lightGreen,
+    primaryContainer = FinanceTheme.greenBar,
+    onPrimaryContainer = FinanceTheme.greenBar,
 
-    secondary = blueBtn,
-    onSecondary = backDarkMode,
-    secondaryContainer = oceanBlueBtn,
-    onSecondaryContainer = Color.White,
+    background = FinanceTheme.backDarkMode,
+    tertiary = FinanceTheme.backLightMode,
+    onTertiary = FinanceTheme.backLightMode,
+    surface = FinanceTheme.oceanBlueBtn,
 
-    tertiary = lightBlueBtn,
-    onTertiary = backDarkMode,
-
-    background = backDarkMode,
-    onBackground = Color.White,
-
-    surface = secondaryDarkMode,
-    onSurface = Color.White,
-
-    surfaceVariant = greenBar,
-    onSurfaceVariant = lightGreen,
-
-    outline = lightGreen,
-    outlineVariant = greenBar
 )
 val LocalFinanceColorScheme = staticCompositionLocalOf { LightColorScheme }
 @Composable

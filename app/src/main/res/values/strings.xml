@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Finance Management</string>
+
+    <!--  End Session  -->
+    <string name="end_session">Завершить сеанс</string>
+    <string name="end_session_subtitle">Вы уверены, что хотите выйти?</string>
+    <string name="btn_yes_end_session">Да, завершить сеанс</string>
+
+
+    <!--  Button  -->
+    <string name="btn_cancel">Отмена</string>
 </resources>

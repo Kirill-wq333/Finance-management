@@ -2,7 +2,6 @@ package com.example.financemanagement.ui.presentation.feature.shared.loading
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -12,7 +11,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
@@ -25,6 +23,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.financemanagement.R
 import com.example.financemanagement.ui.theme.FinanceManagementTheme
+import com.example.financemanagement.ui.theme.FinanceTheme
 import kotlinx.coroutines.delay
 import kotlin.time.Duration.Companion.milliseconds
 
@@ -124,7 +123,7 @@ fun Loading(
                     modifier = Modifier
                         .size(13.dp)
                         .background(
-                            color = colorScheme.onPrimaryContainer.copy(alpha = alpha),
+                            color = FinanceTheme.lightGreen.copy(alpha = alpha),
                             shape = CircleShape
                         )
                 )
@@ -143,7 +142,7 @@ fun LoadingItem(
             .size(100.dp)
             .border(
                 width = 7.dp,
-                color = colorScheme.onPrimaryContainer,
+                color = Color.White,
                 shape = CircleShape
             ),
         contentAlignment = Alignment.Center
