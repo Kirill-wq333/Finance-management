@@ -35,6 +35,8 @@ private val LightColorScheme = lightColorScheme(
     tertiary = FinanceTheme.greenBar,
     onTertiary = Color(0xFF363130),
     surface = FinanceTheme.oceanBlueBtn,
+    outline = FinanceTheme.lettersAndIcons,
+    outlineVariant = FinanceTheme.lettersAndIcons
 )
 
 private val DarkColorScheme = darkColorScheme(
@@ -47,7 +49,8 @@ private val DarkColorScheme = darkColorScheme(
     tertiary = FinanceTheme.backLightMode,
     onTertiary = FinanceTheme.backLightMode,
     surface = FinanceTheme.oceanBlueBtn,
-
+    outline = FinanceTheme.lightGreen,
+    outlineVariant = FinanceTheme.backLightMode
 )
 val LocalFinanceColorScheme = staticCompositionLocalOf { LightColorScheme }
 @Composable

@@ -20,19 +20,24 @@ val montserrat = FontFamily(
 val FinanceMTypography: Typography
     @Composable
     get() = Typography(
-        bodyLarge = TextStyle(
+        titleSmall = TextStyle(
             fontSize = 20.sp,
             fontWeight = FontWeight.SemiBold,
             fontFamily = montserrat,
             lineHeight = 22.sp
         ),
-        bodyMedium = TextStyle(
+        bodyLarge = TextStyle(
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = montserrat
         ),
-        bodySmall = TextStyle(
+        bodyMedium = TextStyle(
             fontSize = 17.sp,
+            fontWeight = FontWeight.Normal,
+            fontFamily = montserrat
+        ),
+        bodySmall = TextStyle(
+            fontSize = 16.sp,
             fontWeight = FontWeight.Normal,
             fontFamily = montserrat
         ),

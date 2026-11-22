@@ -58,12 +58,12 @@ fun EndSession(
             Text(
                 text = stringResource(R.string.end_session),
                 color = MaterialTheme.colorScheme.tertiary,
-                style = FinanceMTypography.bodyMedium
+                style = FinanceMTypography.bodyLarge
             )
             Text(
                 text = stringResource(R.string.end_session_subtitle),
                 color = MaterialTheme.colorScheme.onTertiary,
-                style = FinanceMTypography.bodySmall
+                style = FinanceMTypography.bodyMedium
             )
         }
         Column(

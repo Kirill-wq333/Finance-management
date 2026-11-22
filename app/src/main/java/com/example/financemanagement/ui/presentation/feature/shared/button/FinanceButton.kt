@@ -25,7 +25,7 @@ fun FinanceButton(
     colorButton: Color,
     onClick: () -> Unit,
     colorText: Color = FinanceTheme.lettersAndIcons,
-    style: TextStyle = FinanceMTypography.bodyLarge
+    style: TextStyle = FinanceMTypography.titleSmall
 ) {
     Box(
         modifier = modifier
