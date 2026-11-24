@@ -89,7 +89,7 @@ fun Accordion(
             Text(
                 text = accordion,
                 color = MaterialTheme.colorScheme.outline,
-                style = FinanceMTypography.bodySmall
+                style = FinanceMTypography.bodyMedium
             )
 
             Icon(
@@ -115,7 +115,7 @@ fun Accordion(
                 Text(
                     text = description,
                     color = MaterialTheme.colorScheme.outlineVariant,
-                    style = FinanceMTypography.labelSmall
+                    style = FinanceMTypography.labelMedium
                 )
             }
         }

@@ -15,6 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.financemanagement.R
+import com.example.financemanagement.ui.presentation.feature.shared.button.Action
 import com.example.financemanagement.ui.presentation.feature.shared.button.FinanceButton
 import com.example.financemanagement.ui.theme.FinanceMTypography
 import com.example.financemanagement.ui.theme.FinanceManagementTheme
@@ -58,30 +59,17 @@ fun EndSession(
             Text(
                 text = stringResource(R.string.end_session),
                 color = MaterialTheme.colorScheme.tertiary,
-                style = FinanceMTypography.bodyLarge
+                style = FinanceMTypography.titleSmall
             )
             Text(
                 text = stringResource(R.string.end_session_subtitle),
                 color = MaterialTheme.colorScheme.onTertiary,
-                style = FinanceMTypography.bodyMedium
+                style = FinanceMTypography.bodyLarge
             )
         }
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(11.dp)
-        ) {
-            FinanceButton(
-                text = stringResource(R.string.btn_yes_end_session),
-                colorButton = FinanceTheme.mainGreen,
-                style = FinanceMTypography.labelLarge,
-                onClick = onLogout
-            )
-            FinanceButton(
-                text = stringResource(R.string.btn_cancel),
-                colorButton = FinanceTheme.lightGreen,
-                style = FinanceMTypography.labelLarge,
-                onClick = onCancel
-            )
-        }
+        Action(
+            onFirstClickBtn = onLogout,
+            onSecondClickBtn = onCancel
+        )
     }
 }

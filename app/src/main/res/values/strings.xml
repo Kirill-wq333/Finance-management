@@ -6,6 +6,10 @@
     <string name="end_session_subtitle">Вы уверены, что хотите выйти?</string>
     <string name="btn_yes_end_session">Да, завершить сеанс</string>
 
+    <!--  Delete Account  -->
+    <string name="delete_account">Удалить учетную запись</string>
+    <string name="delete_account_subtitle1">Вы уверены, что хотите выйти из системы?</string>
+    <string name="delete_account_subtitle2">Удаляя свою учетную запись, вы соглашаетесь с тем, что понимаете последствия этого действия и что вы соглашаетесь навсегда удалить свою учетную запись и все связанные с ней данные.</string>
 
     <!--  Button  -->
     <string name="btn_cancel">Отмена</string>

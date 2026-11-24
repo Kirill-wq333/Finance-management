@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.financemanagement.R
 import com.example.financemanagement.ui.theme.FinanceManagementTheme
+import com.example.financemanagement.ui.theme.FinanceTheme
 
 @Preview
 @Composable
@@ -64,7 +65,7 @@ fun CreateAvatar(
                 modifier = Modifier
                     .padding(end = 13.dp)
                     .background(
-                        color = colorScheme.primary,
+                        color = FinanceTheme.mainGreen,
                         shape = CircleShape
                     )
             ) {

@@ -16,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.financemanagement.R
 import com.example.financemanagement.ui.theme.FinanceManagementTheme
+import com.example.financemanagement.ui.theme.FinanceTheme
 
 @Preview
 @Composable
@@ -26,7 +27,7 @@ fun FingerPrint(
     Box(
         modifier = modifier
             .background(
-                color = colorScheme.primary,
+                color = FinanceTheme.mainGreen,
                 shape = CircleShape
             )
     ) {
