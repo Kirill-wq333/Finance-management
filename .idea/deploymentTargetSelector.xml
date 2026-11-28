@@ -6,11 +6,11 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="FingerPrint">
+      <SelectionState runConfigName="data">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="BottomBar">
+      <SelectionState runConfigName="domain">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
