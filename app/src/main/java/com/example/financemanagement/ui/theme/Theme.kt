@@ -27,6 +27,7 @@ object FinanceTheme {
     val oceanBlueBtn = Color(0xFF0068FF)
 }
 private val LightColorScheme = lightColorScheme(
+    primary = FinanceTheme.mainGreen,
     onPrimary = FinanceTheme.backDarkMode,
     primaryContainer = FinanceTheme.lightGreen,
     onPrimaryContainer = FinanceTheme.lettersAndIcons,
@@ -39,6 +40,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 private val DarkColorScheme = darkColorScheme(
+    primary = FinanceTheme.lightGreen,
     onPrimary = FinanceTheme.lightGreen,
     primaryContainer = FinanceTheme.greenBar,
     onPrimaryContainer = FinanceTheme.greenBar,
